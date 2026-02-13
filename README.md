@@ -51,7 +51,14 @@ GitActive currently formats the following event types:
 | Event | Example Output |
 |-------|---------------|
 | Push | `Pushed 3 commit(s) to user/repo` |
+| Create | `Created a new repo: user/repo` |
+| Delete | `Deleted branch: feature-x` |
+| Fork | `Forked a repo: user/repo` |
+| Wiki (Gollum) | `Created/Updated 2 wiki pages for: user/repo` |
+| Issues | `Opened issue 42 in user/repo` |
 | Star | `Starred user/repo` |
+
+Any other event types are shown as `EventType in user/repo`.
 
 Duplicate events are grouped together with a count (e.g., `Starred user/repo (2 times)`).
 
